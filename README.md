@@ -62,35 +62,3 @@ fetch(PATCH, DELETE)을 사용하여 수강생의 개인정보 수정 및 탈퇴
 공통 Modal 컴포넌트를 처리하는 API 구현
 
 
-src
- ┣ config
- ┃ ┗ db.ts
- ┣ controllers
- ┃ ┣ auth.controller.ts
- ┃ ┗ user.controller.ts
- ┣ middleware
- ┃ ┣ auth.middleware.ts
- ┃ ┗ error.middleware.ts
- ┣ models
- ┃ ┣ user.model.ts
- ┃ ┗ course.model.ts
- ┣ routes
- ┃ ┣ auth.routes.ts
- ┃ ┗ user.routes.ts
- ┣ services
- ┃ ┣ auth.service.ts
- ┃ ┗ user.service.ts
- ┣ utils
- ┃ ┣ jwt.ts
- ┃ ┣ constants.ts
- ┃ ┗ logger.ts
- ┣ app.ts
- ┗ server.ts
-prisma
- ┣ schema.prisma
- ┗ seed.ts
-.env
-.gitignore
-package.json
-tsconfig.json
-README.md
