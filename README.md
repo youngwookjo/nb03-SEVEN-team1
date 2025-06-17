@@ -65,38 +65,44 @@ fetch(PATCH, DELETE)을 사용하여 수강생의 개인정보 수정 및 탈퇴
 공통 Modal 컴포넌트를 처리하는 API 구현
 
 
-src  
- ┣ config  
- ┃ ┗ db.ts  
- ┣ controllers  
- ┃ ┣ auth.controller.ts  
- ┃ ┗ user.controller.ts  
- ┣ middleware  
- ┃ ┣ auth.middleware.ts  
- ┃ ┗ error.middleware.ts  
- ┣ models  
- ┃ ┣ user.model.ts  
- ┃ ┗ course.model.ts  
- ┣ routes  
- ┃ ┣ auth.routes.ts  
- ┃ ┗ user.routes.ts  
- ┣ services  
- ┃ ┣ auth.service.ts  
- ┃ ┗ user.service.ts  
- ┣ utils  
- ┃ ┣ jwt.ts  
- ┃ ┣ constants.ts  
- ┃ ┗ logger.ts  
- ┣ app.ts  
- ┗ server.ts  
-prisma  
- ┣ schema.prisma  
- ┗ seed.ts  
-.env  
-.gitignore  
-package.json  
-tsconfig.json  
-README.md  
+$ node tree.js   
+┌── src   
+│   ├── app.js   
+│   ├── jobs   
+│   │   └── badgeAssigner.js   
+│   ├── lib  
+│   │   └── prisma.js   
+│   ├── middlewares   
+│   │   ├── errorHandler.js   
+│   │   ├── upload.js   
+│   │   └── validatePassword.js   
+│   ├── prisma   
+│   │   ├── migrations    
+│   │   │   ├── 20250616083340_init   
+│   │   │   │   └── migration.sql   
+│   │   │   └── migration_lock.toml    
+│   │   └── schema.prisma    
+│   ├── routes    
+│   │   ├── exampleRoutes.js   
+│   │   ├── groupRoutes.js    
+│   │   ├── rankingRoutes.js    
+│   │   └── recordRoutes.js    
+│   ├── services    
+│   │   ├── GroupService.js   
+│   │   ├── RankingService.js    
+│   │   └── RecordService.js   
+│   ├── swagger   
+│   │   └── swagger.js    
+│   └── utils    
+│       └── sendDiscordWebhook.js    
+├── .env    
+├── .gitignore    
+├── package-lock.json    
+├── package.json   
+├── README.md   
+├── tree.js     
+├── TREE.MD     
+└── uploads    
 
 
 
